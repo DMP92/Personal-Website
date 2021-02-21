@@ -1,14 +1,28 @@
 
-
+/* Type Selectors */
 body, html {
     margin: 0;
     padding: 0;
     background-color: 303234;
     background-image: url(Images/black_mamba.png);
-    background-attachment: fixed;
-    
+    background-attachment: fixed;  
 }
 
+li {
+    border-radius: 2px;
+    padding: 10px; 
+    list-style-type: none;
+    display: inline;
+}
+
+h2 {
+    font-size: 35px;
+    position: relative;
+    bottom: 75px;    
+    color: #F4C33F;
+}
+
+/* Main Grid Container */
 
 .container {
     display: grid;
@@ -22,46 +36,31 @@ body, html {
         "project project"
         "article2 article2"
         "footer footer";
-        justify-content: stretch;
-        align-items: stretch;
-        grid-gap: 5px;
+    justify-content: stretch;
+    align-items: stretch;
+    grid-gap: 5px;
         
 }
 
-/* Establishing proper placement of nav items */
+/* Nav Bar */
 .nav {
     grid-area: nav;
     background-color: hsl(44, 89%, 60%);
     justify-content: center;
-    align-items: center;
-
-    
+    align-items: center;  
 }
 
 .nav-items {
-     align-items: center;
-     display: flex;
-     justify-content: space-evenly;
-     color: #f3f7f2 ;
-     text-shadow: 0 0 2px black;
-
-    
-   
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: #f3f7f2 ;
+    text-shadow: 0 0 2px black;   
 }
-
-li {
-    border-radius: 2px;
-    padding: 10px;
-    
-   
-}
-
 
 .nav1:hover, .nav2:hover, .nav3:hover {
     color: #303234 ; 
-    text-shadow: 0 0 0;
-    
-    
+    text-shadow: 0 0 0;     
 }
 
 .nav1, .nav2, .nav3 {
@@ -71,13 +70,11 @@ li {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0;
-
-    
+    padding: 0;  
 }
 
 
-
+/* Header Section */
 .header { 
     font-size: 50px;
     text-align: center;
@@ -89,22 +86,10 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-shadow: 0 0 3px rgb(244, 195, 63);
-    
+    text-shadow: 0 0 3px rgb(244, 195, 63);   
 }
 
-h2 {
-    font-size: 35px;
-    position: relative;
-    bottom: 75px;    
-    color: #F4C33F;
-}
-
-
-li {
-    list-style-type: none;
-    display: inline;
-}
+/* About Me Section */
 
 .article {
     font-family: Merriweather;
@@ -116,9 +101,24 @@ li {
     grid-area: article1;
     background: linear-gradient(90deg, rgba(85, 94, 91, .35), rgba(161, 170, 167, 0.35));
     border-radius: 5px;
-    margin: 5%;
-    
+    margin: 5%;   
 }
+
+.image {
+    position: relative;
+    top: 500px;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
+
+#text {
+    color: #F4C33F;
+    font-family: Merriweather;
+    font-size: 1.5em;
+}
+
+/* Skill Section */
 
 .skills {
     font-family: Merriweather;
@@ -130,6 +130,8 @@ li {
     color: #F4C33F;
 }
 
+/* Past Project Section */
+
 .project {
     color: rgb(244, 195, 63);
     font-family: Merriweather;
@@ -139,6 +141,8 @@ li {
     justify-content: center;
     grid-area: project;
 }
+
+/* Contact Form Section */
 
 .contact-me {
     font-family: Merriweather;
@@ -152,6 +156,8 @@ li {
     text-outline: 2px 2px solid white;
 }
 
+/* Footer Section */
+
 .footer {
     font-family: Josefin Slab;
     font-weight: 900;
@@ -163,27 +169,4 @@ li {
     background-color: #F4C33F;
     color:#f3f7f2; 
     text-shadow: 0 0 2px #303234;
-}
-
-
-.image {
-    position: relative;
-    top: 500px;
-    border-radius: 50%;
-    height: 400px;
-    width: 400px;
-}
-
-
-
-
-#text {
-    color: #F4C33F;
-    font-family: Merriweather;
-    
-    
-    
-
-
-
 }
