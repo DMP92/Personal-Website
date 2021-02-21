@@ -1,0 +1,189 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: 303234;
+    background-image: url(Images/black_mamba.png);
+    background-attachment: fixed;
+    
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 50%, 50%;
+    grid-template-rows: 50px 500px repeat(4, 100%) 100px;
+    grid-template-areas: 
+        "nav nav"
+        "header header"
+        "article1 article1"
+        "skills skills"
+        "project project"
+        "article2 article2"
+        "footer footer";
+        justify-content: stretch;
+        align-items: stretch;
+        grid-gap: 5px;
+        
+}
+
+/* Establishing proper placement of nav items */
+.nav {
+    grid-area: nav;
+    background-color: hsl(44, 89%, 60%);
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.nav-items {
+     align-items: center;
+     display: flex;
+     justify-content: space-evenly;
+     color: #f3f7f2 ;
+     text-shadow: 0 0 2px black;
+
+    
+   
+}
+
+li {
+    border-radius: 2px;
+    padding: 10px;
+    
+   
+}
+
+
+.nav1:hover, .nav2:hover, .nav3:hover {
+    color: #303234 ; 
+    text-shadow: 0 0 0;
+    
+    
+}
+
+.nav1, .nav2, .nav3 {
+    font-weight: 900;
+    font-size: 20px;
+    font-family: Josefin slab;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+
+    
+}
+
+
+
+.header { 
+    font-size: 50px;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Amatic SC', cursive;
+    color: #f3f7f2;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 3px rgb(244, 195, 63);
+    
+}
+
+h2 {
+    font-size: 35px;
+    position: relative;
+    bottom: 75px;    
+    color: #F4C33F;
+}
+
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+.article {
+    font-family: Merriweather;
+    font-size: 20px;
+    color: #F4C33F;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    grid-area: article1;
+    background: linear-gradient(90deg, rgba(85, 94, 91, .35), rgba(161, 170, 167, 0.35));
+    border-radius: 5px;
+    margin: 5%;
+    
+}
+
+.skills {
+    font-family: Merriweather;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: skills;
+    color: #F4C33F;
+}
+
+.project {
+    color: rgb(244, 195, 63);
+    font-family: Merriweather;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: project;
+}
+
+.contact-me {
+    font-family: Merriweather;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: article2;
+    color: #F4C33F;   
+    text-shadow: 0 20px  rgba(0, 0, 0, 0.836);
+    text-outline: 2px 2px solid white;
+}
+
+.footer {
+    font-family: Josefin Slab;
+    font-weight: 900;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+    background-color: #F4C33F;
+    color:#f3f7f2; 
+    text-shadow: 0 0 2px #303234;
+}
+
+
+.image {
+    position: relative;
+    top: 500px;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
+
+
+
+
+#text {
+    color: #F4C33F;
+    font-family: Merriweather;
+    
+    
+    
+
+
+
+}
