@@ -10,7 +10,7 @@ body, html {
 
 li {
     border-radius: 2px;
-    padding: 10px; 
+    padding: 10px;
     list-style-type: none;
     display: inline;
 }
@@ -22,12 +22,18 @@ h2 {
     color: #F4C33F;
 }
 
+a {
+    text-decoration: none;
+    color: #f3f7f2 ;
+    text-shadow: 0 0 2px black; 
+}
+
 /* Main Grid Container */
 
 .container {
     display: grid;
     grid-template-columns: 50%, 50%;
-    grid-template-rows: 50px 500px repeat(4, 100%) 100px;
+    grid-template-rows: 50px 500px 100% 80px repeat(2, 100%) 100px;
     grid-template-areas: 
         "nav nav"
         "header header"
@@ -38,7 +44,7 @@ h2 {
         "footer footer";
     justify-content: stretch;
     align-items: stretch;
-    grid-gap: 5px;
+    grid-gap: 10px;
         
 }
 
@@ -60,7 +66,7 @@ h2 {
 
 .nav1:hover, .nav2:hover, .nav3:hover {
     color: #303234 ; 
-    text-shadow: 0 0 0;     
+    text-shadow: 0 0 0; 
 }
 
 .nav1, .nav2, .nav3 {
@@ -70,7 +76,7 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0;  
+    padding: 0;     
 }
 
 
@@ -99,9 +105,10 @@ h2 {
     justify-content: center;
     align-items: start;
     grid-area: article1;
-    background: linear-gradient(90deg, rgba(85, 94, 91, .35), rgba(161, 170, 167, 0.35));
+    background: linear-gradient(90deg, rgba(85, 94, 91, .35), 
+    rgba(161, 170, 167, 0.35));
     border-radius: 5px;
-    margin: 5%;   
+    margin: 0 5% 0 5%;   
 }
 
 .image {
@@ -116,6 +123,10 @@ h2 {
     color: #F4C33F;
     font-family: Merriweather;
     font-size: 1.5em;
+    float: right;
+    background-color: blue;
+    position: relative;
+    left: 85px;
 }
 
 /* Skill Section */
@@ -128,6 +139,13 @@ h2 {
     align-items: center;
     grid-area: skills;
     color: #F4C33F;
+    background: linear-gradient(90deg, rgba(85, 94, 91, .35), rgba(161, 170, 167, 0.35));
+    border-radius: 5px;
+    margin: 0% 5% 0%;
+}
+
+#skills {
+
 }
 
 /* Past Project Section */
