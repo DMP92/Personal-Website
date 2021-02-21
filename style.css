@@ -15,6 +15,15 @@ li {
     display: inline;
 }
 
+h3 {
+    font-family: Merriweather;
+    font-size: 30px;
+    text-align: center;
+    color: #f3f7f2;
+    text-shadow: 0 0 2px black; 
+    margin-bottom: 0;
+}
+
 h2 {
     font-size: 35px;
     position: relative;
@@ -33,7 +42,7 @@ a {
 .container {
     display: grid;
     grid-template-columns: 50%, 50%;
-    grid-template-rows: 50px 500px 100% 80px repeat(2, 100%) 100px;
+    grid-template-rows: 50px 500px 100% 150px repeat(2, 100%) 100px;
     grid-template-areas: 
         "nav nav"
         "header header"
@@ -137,14 +146,17 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: skills;
     color: #F4C33F;
-    background: linear-gradient(90deg, rgba(85, 94, 91, .35), rgba(161, 170, 167, 0.35));
-    border-radius: 5px;
-    margin: 0% 5% 0%;
+    margin-top: 0;
 }
 
 #skills {
+    grid-area: skills;
+    background: linear-gradient(90deg, rgba(85, 94, 91, .35), rgba(161, 170, 167, 0.35));
+    border-radius: 5px;
+    margin: 0 5% 0 5%;
+    justify-content: center;
+    align-items: center;
 
 }
 
