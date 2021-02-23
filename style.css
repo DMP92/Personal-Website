@@ -31,6 +31,12 @@ h2 {
     color: #F4C33F;
 }
 
+a:hover {
+    color:#303234;
+    text-decoration: none;
+    text-shadow: 0 0 0;
+}
+
 a {
     text-decoration: none;
     color: #f3f7f2 ;
@@ -63,6 +69,7 @@ a {
     background-color: hsl(44, 89%, 60%);
     justify-content: center;
     align-items: center;  
+    box-shadow: 20px 40px 40px rgba(0, 0, 0, .3)
 }
 
 .nav-items {
@@ -133,7 +140,7 @@ a {
     font-family: Merriweather;
     font-size: 1.5em;
     float: right;
-    background-color: blue;
+    
     position: relative;
     left: 85px;
 }
@@ -157,6 +164,7 @@ a {
     margin: 0 5% 0 5%;
     justify-content: center;
     align-items: center;
+    box-shadow: 7px 10px 0 rgba(0, 0, 0, 0.3);
 
 }
 
